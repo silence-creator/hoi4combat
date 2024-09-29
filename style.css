@@ -1,0 +1,60 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2b2b2b; /* Темный фон, как в HOI4 */
+    color: #e5e5e5; /* Светлый текст */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #c69c6d; /* Цвет заголовка */
+}
+
+/* Стили для хомяков */
+.hamster {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #c69c6d; /* Рамка вокруг изображения */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+/* Кнопки */
+button {
+    background-color: #4a4a4a; /* Цвет кнопок */
+    color: #e5e5e5; /* Цвет текста кнопок */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Эффект наведения на кнопки */
+button:hover {
+    background-color: #c69c6d; /* Цвет кнопки при наведении */
+    color: #2b2b2b; /* Цвет текста при наведении */
+}
+
+/* Основной контейнер */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Раздел для сообщений */
+.message {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
