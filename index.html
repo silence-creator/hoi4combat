@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,13 +21,33 @@
     </div>
 
     <script>
-        document.getElementById("attackBtn").addEventListener("click", function() {
-            alert("Хомяки атакуют друг друга!");
-        });
+        // script.js
+        // Получаем кастомное всплывающее окно
+        var alertBox = document.getElementById("customAlert");
 
-        document.getElementById("resetBtn").addEventListener("click", function() {
-            alert("Игра сброшена!");
-        });
+        // Получаем кнопку, которая открывает всплывающее окно
+        var btn = document.getElementById("myButton");
+
+        // Получаем элемент <span>, который закрывает всплывающее окно
+        var span = document.getElementsByClassName("close")[0];
+
+        // Когда пользователь нажимает на кнопку, открываем кастомное окно
+        btn.onclick = function() {
+            alertBox.style.display = "block";
+        }
+
+        // Когда пользователь нажимает на <span> (x), закрываем кастомное окно
+        span.onclick = function() {
+            alertBox.style.display = "none";
+        }
+
+        // Когда пользователь нажимает в любом месте вне кастомного окна, закрываем его
+        window.onclick = function(event) {
+            if (event.target == alertBox) {
+                alertBox.style.display = "none";
+            }
+        }
+
 
         // Подключение к Telegram Web App API
         Telegram.WebApp.ready();
